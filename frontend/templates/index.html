@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Demo Observability - HTMX Frontend</title>
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+</head>
+<body>
+<h1>Observability Demo - Frontend</h1>
+
+<form hx-post="/create-item" hx-trigger="submit" hx-target="#result" hx-swap="innerHTML">
+    <input type="text" name="item_data" placeholder="Enter some data">
+    <button type="submit">Create Item</button>
+</form>
+
+<div id="result"></div>
+
+<hr/>
+
+<button hx-get="/list-items" hx-target="#items" hx-swap="innerHTML">List Items</button>
+<div id="items"></div>
+</body>
+</html>

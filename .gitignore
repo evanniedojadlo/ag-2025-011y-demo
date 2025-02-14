@@ -1,0 +1,33 @@
+# ===============================================
+# IntelliJ IDEA / JetBrains
+# ===============================================
+# Uncomment if you want to ignore all .idea folder content
+.idea/
+
+# IDE project files
+*.iws
+*.iml
+*.ipr
+
+# IntelliJ out folder
+out/
+artifacts/
+gen/
+
+# ===============================================
+# macOS
+# ===============================================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon
+._*
+
+# Thumbnails
+._.DS_Store
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
